@@ -2,7 +2,7 @@ import java.io.Serializable;
 
 /**
  * Let's say your singleton has implemented serialization. Now what will happen if you serialize object and deserialize.
- * During desrialization it will create the new object every time if we go in traditional way.
+ * During deserialization it will create the new object every time if we go in traditional way.
  * To resolve it add readResolve method which will ensure that during deserialize we return same instance.
  *
  * Check Main class for violation example
@@ -21,8 +21,8 @@ public class SerializableSingleton implements Serializable {
     }
 
     /**
-     * This is the key method which is responsible during desrizalization prcoess
-     * This method get invoked and we are simply returning already created object
+     * This is the key method which is responsible during deserialization process
+     * This method get invoked, and we are simply returning already created object
      * @return
      */
     protected Object readResolve() {

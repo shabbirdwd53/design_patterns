@@ -5,8 +5,8 @@ import demo.component.uifactory.WinUIFactory;
 /**
  * As we know in factory pattern we took control of creating object and details by taking type.
  * Now you have to use factory when your application support different product families example Computer can be PC,Server or Assembled.
- * So wwhat client needs to do is just pass the family of the product and that product will be built i.e. created.
- * Since we are dealing with creation of objects it is falling under creational design patern.
+ * So what client needs to do is just pass the family of the product and that product will be built i.e. created.
+ * Since we are dealing with creation of objects it is falling under creational design pattern.
  *
  * You ensure that when we say multiple product families , it should be related.
  *
@@ -16,7 +16,7 @@ import demo.component.uifactory.WinUIFactory;
  * 3.  Abstract factory - which helps for interacting for creation and product factories will extend that to ensure right
  *      product gets created. - Here UIFactory
  * 4. Actual product factories - WinUIFactory , MacUIFactory
- * 5. Client - Application will take the respective factory and creates object and then you can paint UI.
+ * 5. Client - Application will take the respective factory and creates object, and then you can paint UI.
  *
  * Java lib example which is most famous that DOM Parser .It uses abstract factory pattern for creations.
  * The DocumentBuilderFactory is an abstract factory, a factory that is created as a new instance of DocumentBuilderFactory and the Document is an interface that is implemented by the factory to return the response.

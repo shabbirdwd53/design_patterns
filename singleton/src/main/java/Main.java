@@ -44,5 +44,6 @@ public class Main {
         System.out.println("Singleton instance : "+ instance.hashCode());
 
         //Solution to this is go by enum
+        EnumSingleton.INSTANCE.doSomething();
     }
 }
