@@ -9,8 +9,8 @@ import java.lang.reflect.InvocationTargetException;
 // Mainly this class used to show violations using serializable and reflection.
 public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        exampleSerialization();
-        exampleReflection();
+        //exampleSerialization();
+       exampleReflection();
     }
     private static void exampleSerialization() throws IOException, ClassNotFoundException {
         LazySingleton lazySingleton = LazySingleton.getInstance();

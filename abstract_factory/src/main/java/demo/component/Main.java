@@ -1,5 +1,6 @@
 package demo.component;
 
+import demo.component.uifactory.MacUIFactory;
 import demo.component.uifactory.WinUIFactory;
 
 /**
@@ -26,7 +27,8 @@ import demo.component.uifactory.WinUIFactory;
  */
 public class Main {
     public static void main(String[] args) {
-        Application application  = new Application(new WinUIFactory());
+        Application application
+                = new Application(new MacUIFactory());
         application.paint();
     }
 }
