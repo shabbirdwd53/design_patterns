@@ -1,0 +1,12 @@
+# generated files
+bin/**
+gen/**
+# project based files
+.idea/
+*.iml
+*.ipr
+*.iws
+.gradletasknamecache
+.gradle/
+build/
+bin/
